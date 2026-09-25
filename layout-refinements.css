@@ -1,0 +1,30 @@
+/* Text-only motion: transforms do not change surrounding layout. */
+#home .hero-grid>div:first-child{min-width:0;container-type:inline-size}
+#home .hero h1#heroStampTitle{font-size:clamp(25px,8.6cqw,68px)!important;line-height:1.2!important;letter-spacing:-.055em!important;word-break:keep-all;overflow-wrap:normal;max-width:100%;transform-origin:left center}
+.hero-title-line{display:block;white-space:nowrap}
+.soft-glow-title,[data-soft-glow]{transform-origin:left center;word-break:keep-all}
+/* One gentle entrance per viewport entry; no idle pulsing. */
+.soft-glow-title.is-in-view,[data-soft-glow].is-in-view{animation:chTitleReveal 950ms cubic-bezier(.22,1,.36,1) both}
+@keyframes chTitleReveal{from{opacity:.38;transform:translate3d(0,14px,0);text-shadow:none}to{opacity:1;transform:translate3d(0,0,0);text-shadow:none}}
+.pdf-facility-stage{container-type:inline-size}
+.premium-question-cover{position:absolute;left:19.8%;top:37.6%;width:66%;height:10.8%;background:rgb(241,248,246);z-index:2;padding:.6% .6%;box-sizing:border-box}
+.premium-question-cover h2{margin:0;color:#3a5862;font-size:3.15cqw;font-weight:400;line-height:1.32;letter-spacing:-.04em}
+.premium-question-cover h2>span{display:block;font-size:4.3cqw;margin-bottom:.7cqw}
+.middle-link-banner{height:auto!important;min-height:var(--link-banner-height,104px)!important;box-sizing:border-box;align-items:center!important}
+.middle-link-banner-copy{align-self:center;align-content:center;gap:5px!important}
+.middle-link-banner-copy strong,.middle-link-banner-description{margin:0!important}
+.middle-link-banner-copy strong{line-height:1.3!important;word-break:keep-all}
+.middle-link-banner-description{line-height:1.5!important}
+.middle-link-banner-arrow{align-self:center!important}
+.middle-link-banner-arrow{position:relative;font-size:0!important;flex:0 0 auto}
+.middle-link-banner-arrow::before{content:"";display:block;width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:11px solid #fff;margin-left:3px}
+.product-detail-page-btn .detail-arrow{position:relative;width:26px;height:26px;display:inline-grid;place-items:center;flex:0 0 26px;border:2px solid currentColor;border-radius:50%;font-size:0!important;box-sizing:border-box;transition:transform .2s ease}
+.product-detail-page-btn .detail-arrow::before{content:"";display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:9px solid currentColor;transform:translateY(2px)}
+.product-detail-page-btn .detail-arrow.is-up{transform:rotate(180deg)}
+.ch-directions{background:linear-gradient(145deg,#f1faf6 0%,#fff8e9 100%)!important}
+#contactForm{min-width:0;font-size:16px}
+#inquirySubmitStatus{margin:0;overflow-wrap:anywhere;line-height:1.6}
+#contactForm .contact-submit{min-height:48px}
+@media(prefers-reduced-motion:reduce){.soft-glow-title.is-in-view,[data-soft-glow].is-in-view{animation:none!important;transform:none!important;text-shadow:none!important}}
+
+#brand .brand-night-store{position:absolute;left:11.25%;top:12.75%;width:39.45%;height:14.85%;object-fit:cover;object-position:center;border-radius:2.5% 2.5% 2.5% 2.5%;z-index:1;display:block}

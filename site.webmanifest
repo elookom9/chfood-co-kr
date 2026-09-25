@@ -1,0 +1,16 @@
+{
+  "name": "씨에이치푸드",
+  "short_name": "CH FOOD",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d71920",
+  "icons": [
+    {
+      "src": "/favicon.png?v=2",
+      "sizes": "1772x1772",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
